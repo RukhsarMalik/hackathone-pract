@@ -32,17 +32,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-      <div className="relative group"> 
-
+      <div className="relative group">
         <div className="bg-gray-200 w-full h-64 flex items-center justify-center rounded-lg overflow-hidden">
-      
           <Link href={`/product/${id}`}>
             <Image
               src={image}
               alt={name}
-              width={140}  
-              height={150} 
-              className="object-cover transition-transform transform group-hover:scale-105" 
+              width={140}
+              height={150}
+              className="object-cover transition-transform transform group-hover:scale-105"
             />
           </Link>
         </div>
@@ -61,7 +59,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
       </div>
 
-      <h3 className="text-xl font-semibold mt-3">{name}</h3>
+      {/* Truncated Product Name */}
+      <h3
+        className="text-xl font-semibold mt-3 truncate"
+        title={name} // Tooltip to show the full name on hover
+      >
+        {name}
+      </h3>
 
       <div className="mt-3">
         {discountPercentage > 0 ? (
