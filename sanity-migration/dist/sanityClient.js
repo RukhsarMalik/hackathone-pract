@@ -8,5 +8,5 @@ exports.client = (0, client_1.createClient)({
     dataset: 'process.env.NEXT_PUBLIC_SANITY_DATASET',
     apiVersion: '2024-01-04',
     useCdn: false,
-    token: process.env.SANITY_TOKEN,
+    token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
 });
