@@ -5,8 +5,8 @@ exports.client = void 0;
 const client_1 = require("@sanity/client");
 exports.client = (0, client_1.createClient)({
     projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-    dataset: 'production',
+    dataset: 'process.env.NEXT_PUBLIC_SANITY_DATASET',
     apiVersion: '2024-01-04',
     useCdn: false,
-    token: process.env.token,
+    token: process.env.SANITY_TOKEN,
 });
