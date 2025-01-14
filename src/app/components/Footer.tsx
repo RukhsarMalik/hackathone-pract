@@ -112,7 +112,7 @@ export const Footer = () => {
        
         <div className='w-full h-[40px] text-center py-[12px] border-t border-gray-800'>
           <p className='opacity-[40%] text-[12px]'>
-            © Copyright Rimel 2022 All Right Reserved
+            © Copyright Rukhsar Malik 2025, All Right Reserved
           </p>
         </div>
 
